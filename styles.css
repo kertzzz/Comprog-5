@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    background-color: bisque;
+}
+.calcubox {
+    width: 22cm;
+    height: 24cm;
+    margin-left: 20px;
+    margin-top: 4px;
+    background-color: rgb(64, 67, 73);
+    flex-direction: column;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.brand {
+    margin-left: 40px;
+    color: white;
+}
+.model{
+    margin-left: 600px;
+    color: white;
+}
+.screen {
+    width: 20cm;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 33px;
+    border-radius: 1rem;
+    background-color: rgb(164, 183, 201);
+}
+.display {
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    color: white;
+    
+}
+.display .input {
+    font-size: 1.50rem;
+    margin-bottom: 0.8rem;
+}
+.display .output {
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+.keys {
+    margin-top: 50px;
+    padding: 3rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1rem;
+}
+.keys .key {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    height: 0;
+    padding-top: 50%;
+    background-color: rgb(39, 39, 39);
+    transition: 0.3s;
+    user-select: none;
+    border-radius: 1rem;
+}
+.keys .key span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+.keys .key:hover {
+    box-shadow: inset 0px 0px 8px black;
+}
