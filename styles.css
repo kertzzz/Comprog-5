@@ -6,9 +6,9 @@ body {
 }
 .calcubox {
     width: 22cm;
-    height: 24cm;
-    margin-left: 20px;
-    margin-top: 4px;
+    height: 30cm;
+    margin-left: 40px;
+    margin-top: 10px;
     background-color: rgb(64, 67, 73);
     flex-direction: column;
     border-radius: 1.5rem;
@@ -24,7 +24,7 @@ body {
 }
 .screen {
     width: 20cm;
-    height: 160px;
+    height: 180px;
     margin-top: 20px;
     margin-left: 33px;
     border-radius: 1rem;
@@ -40,35 +40,36 @@ body {
     
 }
 .display .input {
-    font-size: 1.50rem;
+    font-size: 2rem;
     margin-bottom: 0.8rem;
 }
 .display .output {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     width: 100%;
     max-width: 100%;
     overflow: auto;
 }
 .keys {
-    margin-top: 50px;
-    padding: 3rem;
+    margin-top: 80px;
+    padding: 2rem;
     border-radius: 1.5rem 1.5rem 0 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5 , 1fr); 
+    grid-template-rows: repeat(10, 1fr);
     grid-gap: 1rem;
 }
+
 .keys .key {
     position: relative;
     cursor: pointer;
     display: block;
     height: 0;
-    padding-top: 50%;
+    padding-top: 60%;
     background-color: rgb(39, 39, 39);
     transition: 0.3s;
     user-select: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 .keys .key span {
     position: absolute;
@@ -80,5 +81,8 @@ body {
     color: white;
 }
 .keys .key:hover {
-    box-shadow: inset 0px 0px 8px black;
+    box-shadow: inset 0px 0px 10px black;
+}
+.display .op {
+    color: rgb(255, 60, 42);
 }

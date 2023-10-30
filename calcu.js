@@ -15,9 +15,28 @@ for (let key of keys) {
 		} else if (value == "back") {
 			input = input.slice(0, -1);
 			display_input.innerHTML = CleanInput(input);
+		} else if (value == "cos") {
+			display_input.innerHTML = "cos(";
+		} else if (value == "tan") {
+			display_input.innerHTML = "tan(";
+		} else if (value == "sin") {
+			display_input.innerHTML = "sin(";
+		} else if (value == "log") {
+			display_input.innerHTML = "log(";	
+		} else if (value == "^") {
+			display_input.innerHTML = "^";
+		} else if (value == "π") {
+			display_input.innerHTML = "π";
+		} else if (value == "!") {
+			display_input.innerHTML = "!";
+		} else if (value == "x²") {
+			display_input.innerHTML = "x²";
+		} else if (value == "√") {
+			display_input.innerHTML = "√";
+			
 		} else if (value == "=") {
 			let result = eval(PerpareInput(input));
-
+			
 			display_output.innerHTML = CleanOutput(result);
 		} else if (value == "bracket") {
 			if (
@@ -112,7 +131,7 @@ function ValidateInput (value) {
 			return true;
 		}
 	}
-
+	
 	return true;
 }
 
@@ -126,4 +145,32 @@ function PerpareInput (input) {
 	}
 
 	return input_array.join("");
+}
+
+function sin() {
+
+}
+
+function tan() {
+	
+}
+
+function log() {
+	
+}
+
+function cos() {
+	
+}
+
+function pi() {
+	
+}
+
+function sqr() {
+
+}
+
+function xr() {
+	
 }
